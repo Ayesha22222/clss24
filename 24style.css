@@ -1,0 +1,363 @@
+body,p,span,h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Spartan', sans-serif;
+}
+.bannar .container-fluid{
+    max-width: 1200px;
+}
+body,p{
+    font-weight: 200;
+}
+h1{
+    font-weight: 700;
+}
+s
+
+
+
+body{
+    cursor: pointer;
+     width: 100%;
+     position: relative;
+    }
+ 
+
+
+  
+ 
+ #cursor{
+     height: 50px;
+     width: 50px;
+     background: yellow;
+     border-radius: 50%;
+     position: absolute;
+    display: inline;
+    text-decoration: 0.5s;
+    transition-timing-function: ease-out;
+   
+     
+ }
+ 
+
+div:hover .cursor{
+    transform: scale(0.5);
+}
+
+
+
+
+
+
+
+
+
+
+/* Header section */
+.main-menu{
+    background-color: #e7e6e6;
+}
+.header-img img{
+    width: 90px;
+}
+.header {
+    text-align: right;
+}
+.header-menu{
+    display: inline-block;
+}
+.nav-item{
+    padding: 6px 12px;
+    position: relative;
+}
+.header ul li a::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #111;
+    transition: .4s;
+}
+.header ul li a:hover::before{
+    width: 100%;
+}
+.header-menu ul li ul{
+    background-color: black;
+}
+.header-menu ul li ul li {
+    width: 135px;
+    height: 80px;
+    background-color: #706ee5;
+    margin: 10px 30px;
+
+}
+.header-menu ul li ul li a {
+    display: inline-block;
+    text-align: center;
+    padding: 28px 0px;
+    background: #fff;
+    transition: .4s;
+
+}
+.header-menu ul li ul li a:hover::before{
+    background-color: aquamarine;
+    width: 0;
+}
+.button {
+    background-color: #fff;
+    color: #706ee5;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin-bottom: -37px;
+    position: relative;
+    z-index: 1;
+    transition: .4s;
+}
+.button:hover{
+    color: #fff;
+}
+.button::after{
+    content: "";
+    width: 0;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .4s;
+    background-color: #706ee5;
+    border-radius: 20px;
+    z-index: -1;
+
+}
+.button:hover::after{
+  width: 100%;
+}
+/* bannar section */
+.bannar{
+    background-color:#edf6fe;
+    margin: 0;
+    padding: 0;
+    height: 600px;
+}
+.bannar-texts{
+
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.bannar-text h1{
+    font-weight: 700;
+    font-size: 50px;
+}
+.bannar-text p{
+    margin: 40px 0px;
+}
+.btn-primary.btn1{
+    padding: 10px 13px;
+    border-radius: 20px;
+    transition: .4s;
+}
+.btn-primary.btn1:hover{
+    background-color: #fff;
+    color: #706ee5;
+}
+.bannar-image-item img{
+    max-width:500px;
+    height:500px;
+
+}
+
+.bannar-image-item {
+    height: 620px;
+    width: 750px;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+
+}
+.bannar-image-item::before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -149px;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background:url(https://i.ibb.co/FBCKwJy/hero-image.jpg);
+    background-size: contain;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* service section */
+.service{
+background-color: #fff;
+}
+.service-text h6{
+    color: #706ee5;
+    margin-bottom: 25px;
+}
+.service-text h1{
+    font-size: 40px;
+    margin-right: 215px;
+    margin-bottom: 25px;
+}
+.brd{
+    border-bottom: 2px solid #706ee5;
+}
+.service-text p{
+    margin-right: 215px;
+    font-weight: 300;
+}
+
+.service-item{
+    background-color: #f9fcff;
+    padding: 15px;
+    box-shadow: 0 0 15px 0 #ddd;
+    position: relative;
+    margin-left: 5px;
+}
+
+.service-item i{
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    margin: 20px 0px;
+    color: #fff;
+    background-color: #5a51ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 50px 50px 0px;
+    position: relative;
+}
+.service-item i::after{
+    content: "";
+    width:50%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    background-color: #5a51ea;
+    transition: .4s;
+}
+.service-item:hover i{
+    background-color: #fff;
+    color: #111;
+}
+.service-item i:hover::after{
+    width:80%;
+}
+
+.service-item:hover{
+    background-color: #5a51ea;
+    opacity: .8;
+    color: #fff;
+} 
+
+/* slider section */
+.slider{
+    background: url(https://i.ibb.co/vVHYyDQ/video-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.slider::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:blue ;
+    opacity: .12;
+}
+.slider-text{
+    color: #fff;
+    position: relative;
+}
+.slider-text h5{
+    font-weight: 600;
+}
+.slider-text h3{
+    font-weight: 700;
+    font-size: 50px;
+}
+.slider-text p{
+    font-weight: 500;
+    margin: 25px 285px;
+}
+
+.play-animation-btn{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    background-color: #fff;
+    line-height: 108px;
+    border-radius: 50%;
+    color: red;
+
+
+}
+.play-animation-btn i{
+    font-size: 50px;
+}
+.play-animation-btn::before{
+    content: "";
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 185px;
+    left: 630px;
+    border: 2px solid #fff;
+    background-color: royalblue;
+    border-radius: 50%;
+    animation: play 1.7s ease-in infinite;
+}
+.play-animation-btn::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 180px;
+    left: 625px;
+    border: 2px solid rgb(224, 88, 88);
+    border-radius: 50%;
+    /* background-color: rgb(170, 104, 104); */
+    animation: play 1.7s ease-in infinite;
+}
+
+ @keyframes play{
+    0%,10%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    25%{
+        transform: scale(1.2);
+        opacity: .8;
+    }
+    50%{
+        transform: scale(1.4);
+        opacity: .6;
+    }
+    75%{
+        transform: scale(1.6);
+        opacity: .4;
+    }
+    90%{
+        transform: scale(1.8);
+        opacity: .2;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+} 
+
